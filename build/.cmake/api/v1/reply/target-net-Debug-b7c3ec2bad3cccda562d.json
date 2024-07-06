@@ -1,0 +1,289 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "net.exe"
+		},
+		{
+			"path" : "net.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"LINK_DIRECTORIES",
+			"target_link_libraries",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"fragment" : "-std=gnu99"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "NET_DRIVER_PCAP"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "SYS_PLAT_WINDOWS"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "D:/PostGraduate/cppex/diy_tcpip/start"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/PostGraduate/cppex/diy_tcpip/start/npcap/Include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/PostGraduate/cppex/diy_tcpip/start/src/net/net"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/PostGraduate/cppex/diy_tcpip/start/src/plat"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/PostGraduate/cppex/diy_tcpip/start/src/app"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "99"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				4,
+				5,
+				6,
+				8,
+				10
+			]
+		}
+	],
+	"id" : "net::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LD:/PostGraduate/cppex/diy_tcpip/start/npcap/Lib/x64",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lwpcap",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lpacket",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lWs2_32",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "net",
+	"nameOnDisk" : "net.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				4,
+				5,
+				6,
+				8,
+				10
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				7,
+				9,
+				11
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/test/main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/net/net/exmsg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/net/net/net.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/net/net/net_err.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/net/src/exmsg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/net/src/net.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/plat/net_plat.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/plat/net_plat.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/plat/netif_pcap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/plat/netif_pcap.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/plat/sys_plat.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/plat/sys_plat.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}
