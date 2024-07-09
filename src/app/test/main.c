@@ -6,81 +6,135 @@
 
 #include <stdio.h>
 #include "net_err.h"
+#include "nlocker.h"
 #include "pcap/pcap.h"
 #include "sys_plat.h"
 #include "net.h"
 #include "netif_pcap.h"
+#include "dbg.h"
+#include "nlist.h"
+#include "mblock.h"
 
-
-static sys_sem_t sem;
-static sys_mutex_t mutex;
-static int count;  // 共享资源
-
-static char buffer[100];  // 环形数据缓冲区
-static int write_idx, read_idx;  // 写索引和读索引
-static sys_sem_t read_sem;
-static sys_sem_t write_sem;
-
-
-void thread1_entry(void *arg) {
-	// 消费者线程
-	for (int i = 0; i < 2 * sizeof(buffer); i++) {
-		sys_sem_wait(read_sem, 0);
-
-		char data = buffer[read_idx++];
-		if (read_idx >= sizeof(buffer)) {
-			read_idx = 0;
-		}
-		plat_printf("thread1: read data = %d\n", data);
-		
-		sys_sem_notify(write_sem);
-		sys_sleep(100);
-	}
-
-	while (1) {
-		plat_printf("this is thread1: %s\n", (char *)arg);
-		sys_sleep(1000);
-		sys_sem_notify(sem);
-		sys_sleep(1000);
-	}
+/**
+ * @brief 网络设备初始化
+ */
+net_err_t netdev_init(void) {    
+    netif_pcap_open();
+    return NET_ERR_OK;
 }
 
-void thread2_entry(void *arg) {
-	sys_sleep(100);
+/**
+ * @brief 测试结点
+ */
+typedef struct _tnode_t {
+    int id;
+    nlist_node_t node;
+}tnode_t;
 
-	// 生产者线程
-	for (int i = 0; i < 2 * sizeof(buffer); i++) {
-		sys_sem_wait(write_sem, 0);
+/**
+ * @brief 链表访问测试
+ */
+void nlist_test(void) {
+    #define NODE_CNT        8
 
-		buffer[write_idx++] = i;
-		if (write_idx >= sizeof(buffer)) {
-			write_idx = 0;
-		}
-		plat_printf("thread2: write data = %d\n", i);
+    tnode_t node[NODE_CNT];
+    nlist_t list;
+    nlist_node_t * p;
 
-		sys_sem_notify(read_sem);
-	}
+    nlist_init(&list);
 
-	while (1) {
-		sys_sem_wait(sem, 0);
-		plat_printf("this is thread2: %s\n", (char *)arg);
-	}
+    // 头部插入
+    for (int i = 0; i < NODE_CNT; i++) {
+        node[i].id = i;
+        nlist_insert_first(&list, &node[i].node);
+    }
+
+    // 遍历打印
+    plat_printf("insert first\n");
+    nlist_for_each(p, &list) {
+        tnode_t * tnode = nlist_entry(p, tnode_t, node);
+        plat_printf("id:%d\n", tnode->id);
+    }
+
+    // 头部移除
+    plat_printf("remove first\n");
+    for (int i = 0; i < NODE_CNT; i++) {
+        p = nlist_remove_first(&list);
+        plat_printf("id:%d\n", nlist_entry(p, tnode_t, node)->id);
+   }
+
+    // 尾部插入
+    for (int i = 0; i < NODE_CNT; i++) {
+        nlist_insert_last(&list, &node[i].node);
+    }
+
+    // 遍历打印
+    plat_printf("insert last\n");
+    nlist_for_each(p, &list) {
+        tnode_t * tnode = nlist_entry(p, tnode_t, node);
+        plat_printf("id:%d\n", tnode->id);
+    }
+
+    // 尾部移除
+    plat_printf("remove last\n");
+    for (int i = 0; i < NODE_CNT; i++) {
+        p = nlist_remove_last(&list);
+        plat_printf("id:%d\n", nlist_entry(p, tnode_t, node)->id);
+   }    
+
+   // 插入到指定结点之后
+    plat_printf("insert after\n");
+    for (int i = 0; i < NODE_CNT; i++) {
+        nlist_insert_after(&list, nlist_first(&list), &node[i].node);
+    }
+
+    // 遍历打印
+    nlist_for_each(p, &list) {
+        tnode_t * tnode = nlist_entry(p, tnode_t, node);
+        plat_printf("id:%d\n", tnode->id);
+    }
 }
 
-net_err_t netdev_init(void) {
-	netif_pcap_open();
+void mblock_test() {
+	mblock_t blist;
+	static uint8_t buffer[100][10];
 
-	return NET_ERR_OK;
+	void *temp[10];
+	mblock_init(&blist, buffer, 100, 10, NLOCKER_THREAD);
+	for (int i=0; i<10; i++) {
+		temp[i] = mblock_alloc(&blist, 0);
+        plat_printf("block: %p, free_count: %d\n", temp[i], mblock_free_cnt(&blist));
+	}
+
+	for (int i=0; i<10; i++) {
+		mblock_free(&blist, temp[i]);
+		plat_printf("after free, free_count: %d\n", mblock_free_cnt(&blist));
+	}
+	mblock_destroy(&blist);
 }
 
+/**
+ * @brief 基本测试
+ */
+void basic_test(void) {
+    // nlist_test();
+	mblock_test();
+}
+
+/**
+ * @brief 测试入口
+ */
 int main(void) {
-	net_init();
-	net_start();
-	netdev_init();
+    // 初始化协议栈
+    net_init();
+    // 基础测试
+    basic_test();
+    // 初始化网络接口
+    netdev_init();
+    // 启动协议栈
+    net_start();
 
-	while (1) {
-		sys_sleep(10);
-	}
-
-	return 0;
+    while (1) {
+        sys_sleep(10);
+    }
 }

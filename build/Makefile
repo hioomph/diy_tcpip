@@ -153,6 +153,30 @@ src/app/test/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/app/test/main.c.s
 .PHONY : src/app/test/main.c.s
 
+src/net/src/dbg.obj: src/net/src/dbg.c.obj
+.PHONY : src/net/src/dbg.obj
+
+# target to build an object file
+src/net/src/dbg.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/dbg.c.obj
+.PHONY : src/net/src/dbg.c.obj
+
+src/net/src/dbg.i: src/net/src/dbg.c.i
+.PHONY : src/net/src/dbg.i
+
+# target to preprocess a source file
+src/net/src/dbg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/dbg.c.i
+.PHONY : src/net/src/dbg.c.i
+
+src/net/src/dbg.s: src/net/src/dbg.c.s
+.PHONY : src/net/src/dbg.s
+
+# target to generate assembly for a file
+src/net/src/dbg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/dbg.c.s
+.PHONY : src/net/src/dbg.c.s
+
 src/net/src/exmsg.obj: src/net/src/exmsg.c.obj
 .PHONY : src/net/src/exmsg.obj
 
@@ -177,6 +201,30 @@ src/net/src/exmsg.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/exmsg.c.s
 .PHONY : src/net/src/exmsg.c.s
 
+src/net/src/mblock.obj: src/net/src/mblock.c.obj
+.PHONY : src/net/src/mblock.obj
+
+# target to build an object file
+src/net/src/mblock.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/mblock.c.obj
+.PHONY : src/net/src/mblock.c.obj
+
+src/net/src/mblock.i: src/net/src/mblock.c.i
+.PHONY : src/net/src/mblock.i
+
+# target to preprocess a source file
+src/net/src/mblock.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/mblock.c.i
+.PHONY : src/net/src/mblock.c.i
+
+src/net/src/mblock.s: src/net/src/mblock.c.s
+.PHONY : src/net/src/mblock.s
+
+# target to generate assembly for a file
+src/net/src/mblock.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/mblock.c.s
+.PHONY : src/net/src/mblock.c.s
+
 src/net/src/net.obj: src/net/src/net.c.obj
 .PHONY : src/net/src/net.obj
 
@@ -200,6 +248,54 @@ src/net/src/net.s: src/net/src/net.c.s
 src/net/src/net.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/net.c.s
 .PHONY : src/net/src/net.c.s
+
+src/net/src/nlist.obj: src/net/src/nlist.c.obj
+.PHONY : src/net/src/nlist.obj
+
+# target to build an object file
+src/net/src/nlist.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/nlist.c.obj
+.PHONY : src/net/src/nlist.c.obj
+
+src/net/src/nlist.i: src/net/src/nlist.c.i
+.PHONY : src/net/src/nlist.i
+
+# target to preprocess a source file
+src/net/src/nlist.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/nlist.c.i
+.PHONY : src/net/src/nlist.c.i
+
+src/net/src/nlist.s: src/net/src/nlist.c.s
+.PHONY : src/net/src/nlist.s
+
+# target to generate assembly for a file
+src/net/src/nlist.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/nlist.c.s
+.PHONY : src/net/src/nlist.c.s
+
+src/net/src/nlocker.obj: src/net/src/nlocker.c.obj
+.PHONY : src/net/src/nlocker.obj
+
+# target to build an object file
+src/net/src/nlocker.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/nlocker.c.obj
+.PHONY : src/net/src/nlocker.c.obj
+
+src/net/src/nlocker.i: src/net/src/nlocker.c.i
+.PHONY : src/net/src/nlocker.i
+
+# target to preprocess a source file
+src/net/src/nlocker.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/nlocker.c.i
+.PHONY : src/net/src/nlocker.c.i
+
+src/net/src/nlocker.s: src/net/src/nlocker.c.s
+.PHONY : src/net/src/nlocker.s
+
+# target to generate assembly for a file
+src/net/src/nlocker.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/nlocker.c.s
+.PHONY : src/net/src/nlocker.c.s
 
 src/plat/net_plat.obj: src/plat/net_plat.c.obj
 .PHONY : src/plat/net_plat.obj
@@ -285,12 +381,24 @@ help:
 	@echo "... src/app/test/main.obj"
 	@echo "... src/app/test/main.i"
 	@echo "... src/app/test/main.s"
+	@echo "... src/net/src/dbg.obj"
+	@echo "... src/net/src/dbg.i"
+	@echo "... src/net/src/dbg.s"
 	@echo "... src/net/src/exmsg.obj"
 	@echo "... src/net/src/exmsg.i"
 	@echo "... src/net/src/exmsg.s"
+	@echo "... src/net/src/mblock.obj"
+	@echo "... src/net/src/mblock.i"
+	@echo "... src/net/src/mblock.s"
 	@echo "... src/net/src/net.obj"
 	@echo "... src/net/src/net.i"
 	@echo "... src/net/src/net.s"
+	@echo "... src/net/src/nlist.obj"
+	@echo "... src/net/src/nlist.i"
+	@echo "... src/net/src/nlist.s"
+	@echo "... src/net/src/nlocker.obj"
+	@echo "... src/net/src/nlocker.i"
+	@echo "... src/net/src/nlocker.s"
 	@echo "... src/plat/net_plat.obj"
 	@echo "... src/plat/net_plat.i"
 	@echo "... src/plat/net_plat.s"

@@ -1,6 +1,6 @@
-CMakeFiles/net.dir/src/app/test/main.c.obj: \
- D:/PostGraduate/cppex/diy_tcpip/start/src/app/test/main.c \
- C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+CMakeFiles/net.dir/src/net/src/dbg.c.obj: \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/dbg.c \
+ C:/mingw64/x86_64-w64-mingw32/include/string.h \
  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -8,15 +8,20 @@ CMakeFiles/net.dir/src/app/test/main.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
+ C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/dbg.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/plat/net_plat.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_err.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/plat/sys_plat.h \
+ C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_err.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/nlocker.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_err.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/plat/sys_plat.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
@@ -35,9 +40,6 @@ CMakeFiles/net.dir/src/app/test/main.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/windows.h \
  C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
  C:/mingw64/x86_64-w64-mingw32/include/excpt.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
- C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
- C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
  C:/mingw64/x86_64-w64-mingw32/include/windef.h \
  C:/mingw64/x86_64-w64-mingw32/include/minwindef.h \
  C:/mingw64/x86_64-w64-mingw32/include/winapifamily.h \
@@ -51,8 +53,6 @@ CMakeFiles/net.dir/src/app/test/main.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
  C:/mingw64/x86_64-w64-mingw32/include/basetsd.h \
  C:/mingw64/x86_64-w64-mingw32/include/guiddef.h \
- C:/mingw64/x86_64-w64-mingw32/include/string.h \
- C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/x86intrin.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ia32intrin.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h \
@@ -212,13 +212,4 @@ CMakeFiles/net.dir/src/app/test/main.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
  D:/PostGraduate/cppex/diy_tcpip/start/npcap/Include/pcap/bpf.h \
  D:/PostGraduate/cppex/diy_tcpip/start/npcap/Include/pcap/dlt.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/plat/netif_pcap.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/dbg.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/plat/net_plat.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/plat/sys_plat.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_cfg.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/nlist.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/mblock.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/nlist.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/nlocker.h
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_cfg.h
