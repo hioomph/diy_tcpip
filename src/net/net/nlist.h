@@ -41,6 +41,7 @@ static inline nlist_node_t * nlist_node_pre(nlist_node_t *node) {
  */
 static inline void nlist_node_set_next(nlist_node_t* pre, nlist_node_t* next) {
     pre->next = next;
+    next->pre = pre;
 }
 
 /**

@@ -2,7 +2,7 @@
 #define _NLOCKER_H_
 
 #include "net_err.h"
-#include "sys_plat.h"
+#include "sys.h"
 
 typedef enum _nlocker_type_t {
     NLOCKER_NONE,

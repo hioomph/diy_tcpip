@@ -1,6 +1,6 @@
 /**
  * @brief 调试信息输出
-*/
+ */
 
 #include <string.h>
 #include <stdarg.h>

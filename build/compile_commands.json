@@ -16,6 +16,11 @@
 },
 {
   "directory": "D:/PostGraduate/cppex/diy_tcpip/start/build",
+  "command": "C:/mingw64/bin/gcc.exe -DNET_DRIVER_PCAP -DSYS_PLAT_WINDOWS -D_CRT_SECURE_NO_WARNINGS @CMakeFiles/net.dir/includes_C.rsp -g -std=gnu99 -o CMakeFiles/net.dir/src/net/src/fixq.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/fixq.c",
+  "file": "D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/fixq.c"
+},
+{
+  "directory": "D:/PostGraduate/cppex/diy_tcpip/start/build",
   "command": "C:/mingw64/bin/gcc.exe -DNET_DRIVER_PCAP -DSYS_PLAT_WINDOWS -D_CRT_SECURE_NO_WARNINGS @CMakeFiles/net.dir/includes_C.rsp -g -std=gnu99 -o CMakeFiles/net.dir/src/net/src/mblock.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/mblock.c",
   "file": "D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/mblock.c"
 },
@@ -33,6 +38,11 @@
   "directory": "D:/PostGraduate/cppex/diy_tcpip/start/build",
   "command": "C:/mingw64/bin/gcc.exe -DNET_DRIVER_PCAP -DSYS_PLAT_WINDOWS -D_CRT_SECURE_NO_WARNINGS @CMakeFiles/net.dir/includes_C.rsp -g -std=gnu99 -o CMakeFiles/net.dir/src/net/src/nlocker.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/nlocker.c",
   "file": "D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/nlocker.c"
+},
+{
+  "directory": "D:/PostGraduate/cppex/diy_tcpip/start/build",
+  "command": "C:/mingw64/bin/gcc.exe -DNET_DRIVER_PCAP -DSYS_PLAT_WINDOWS -D_CRT_SECURE_NO_WARNINGS @CMakeFiles/net.dir/includes_C.rsp -g -std=gnu99 -o CMakeFiles/net.dir/src/net/src/pktbuf.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/pktbuf.c",
+  "file": "D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/pktbuf.c"
 },
 {
   "directory": "D:/PostGraduate/cppex/diy_tcpip/start/build",

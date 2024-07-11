@@ -201,6 +201,30 @@ src/net/src/exmsg.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/exmsg.c.s
 .PHONY : src/net/src/exmsg.c.s
 
+src/net/src/fixq.obj: src/net/src/fixq.c.obj
+.PHONY : src/net/src/fixq.obj
+
+# target to build an object file
+src/net/src/fixq.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/fixq.c.obj
+.PHONY : src/net/src/fixq.c.obj
+
+src/net/src/fixq.i: src/net/src/fixq.c.i
+.PHONY : src/net/src/fixq.i
+
+# target to preprocess a source file
+src/net/src/fixq.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/fixq.c.i
+.PHONY : src/net/src/fixq.c.i
+
+src/net/src/fixq.s: src/net/src/fixq.c.s
+.PHONY : src/net/src/fixq.s
+
+# target to generate assembly for a file
+src/net/src/fixq.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/fixq.c.s
+.PHONY : src/net/src/fixq.c.s
+
 src/net/src/mblock.obj: src/net/src/mblock.c.obj
 .PHONY : src/net/src/mblock.obj
 
@@ -297,6 +321,30 @@ src/net/src/nlocker.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/nlocker.c.s
 .PHONY : src/net/src/nlocker.c.s
 
+src/net/src/pktbuf.obj: src/net/src/pktbuf.c.obj
+.PHONY : src/net/src/pktbuf.obj
+
+# target to build an object file
+src/net/src/pktbuf.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/pktbuf.c.obj
+.PHONY : src/net/src/pktbuf.c.obj
+
+src/net/src/pktbuf.i: src/net/src/pktbuf.c.i
+.PHONY : src/net/src/pktbuf.i
+
+# target to preprocess a source file
+src/net/src/pktbuf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/pktbuf.c.i
+.PHONY : src/net/src/pktbuf.c.i
+
+src/net/src/pktbuf.s: src/net/src/pktbuf.c.s
+.PHONY : src/net/src/pktbuf.s
+
+# target to generate assembly for a file
+src/net/src/pktbuf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/net.dir/build.make CMakeFiles/net.dir/src/net/src/pktbuf.c.s
+.PHONY : src/net/src/pktbuf.c.s
+
 src/plat/net_plat.obj: src/plat/net_plat.c.obj
 .PHONY : src/plat/net_plat.obj
 
@@ -387,6 +435,9 @@ help:
 	@echo "... src/net/src/exmsg.obj"
 	@echo "... src/net/src/exmsg.i"
 	@echo "... src/net/src/exmsg.s"
+	@echo "... src/net/src/fixq.obj"
+	@echo "... src/net/src/fixq.i"
+	@echo "... src/net/src/fixq.s"
 	@echo "... src/net/src/mblock.obj"
 	@echo "... src/net/src/mblock.i"
 	@echo "... src/net/src/mblock.s"
@@ -399,6 +450,9 @@ help:
 	@echo "... src/net/src/nlocker.obj"
 	@echo "... src/net/src/nlocker.i"
 	@echo "... src/net/src/nlocker.s"
+	@echo "... src/net/src/pktbuf.obj"
+	@echo "... src/net/src/pktbuf.i"
+	@echo "... src/net/src/pktbuf.s"
 	@echo "... src/plat/net_plat.obj"
 	@echo "... src/plat/net_plat.i"
 	@echo "... src/plat/net_plat.s"

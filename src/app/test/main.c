@@ -14,6 +14,7 @@
 #include "dbg.h"
 #include "nlist.h"
 #include "mblock.h"
+#include "pktbuf.h"
 
 /**
  * @brief 网络设备初始化
@@ -21,78 +22,6 @@
 net_err_t netdev_init(void) {    
     netif_pcap_open();
     return NET_ERR_OK;
-}
-
-/**
- * @brief 测试结点
- */
-typedef struct _tnode_t {
-    int id;
-    nlist_node_t node;
-}tnode_t;
-
-/**
- * @brief 链表访问测试
- */
-void nlist_test(void) {
-    #define NODE_CNT        8
-
-    tnode_t node[NODE_CNT];
-    nlist_t list;
-    nlist_node_t * p;
-
-    nlist_init(&list);
-
-    // 头部插入
-    for (int i = 0; i < NODE_CNT; i++) {
-        node[i].id = i;
-        nlist_insert_first(&list, &node[i].node);
-    }
-
-    // 遍历打印
-    plat_printf("insert first\n");
-    nlist_for_each(p, &list) {
-        tnode_t * tnode = nlist_entry(p, tnode_t, node);
-        plat_printf("id:%d\n", tnode->id);
-    }
-
-    // 头部移除
-    plat_printf("remove first\n");
-    for (int i = 0; i < NODE_CNT; i++) {
-        p = nlist_remove_first(&list);
-        plat_printf("id:%d\n", nlist_entry(p, tnode_t, node)->id);
-   }
-
-    // 尾部插入
-    for (int i = 0; i < NODE_CNT; i++) {
-        nlist_insert_last(&list, &node[i].node);
-    }
-
-    // 遍历打印
-    plat_printf("insert last\n");
-    nlist_for_each(p, &list) {
-        tnode_t * tnode = nlist_entry(p, tnode_t, node);
-        plat_printf("id:%d\n", tnode->id);
-    }
-
-    // 尾部移除
-    plat_printf("remove last\n");
-    for (int i = 0; i < NODE_CNT; i++) {
-        p = nlist_remove_last(&list);
-        plat_printf("id:%d\n", nlist_entry(p, tnode_t, node)->id);
-   }    
-
-   // 插入到指定结点之后
-    plat_printf("insert after\n");
-    for (int i = 0; i < NODE_CNT; i++) {
-        nlist_insert_after(&list, nlist_first(&list), &node[i].node);
-    }
-
-    // 遍历打印
-    nlist_for_each(p, &list) {
-        tnode_t * tnode = nlist_entry(p, tnode_t, node);
-        plat_printf("id:%d\n", tnode->id);
-    }
 }
 
 void mblock_test() {
@@ -113,12 +42,18 @@ void mblock_test() {
 	mblock_destroy(&blist);
 }
 
+void pktbuf_test() {
+    pktbuf_t *buf = pktbuf_alloc(2000);
+    // pktbuf_free(buf);
+}
+
+
 /**
  * @brief 基本测试
  */
 void basic_test(void) {
-    // nlist_test();
-	mblock_test();
+	// mblock_test();
+    pktbuf_test();
 }
 
 /**

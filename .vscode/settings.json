@@ -54,7 +54,9 @@
         "httpd.h": "c",
         "netapi.h": "c",
         "pcap.h": "c",
-        "sys_plat.h": "c"
+        "sys_plat.h": "c",
+        "stdarg.h": "c",
+        "fixq.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools"

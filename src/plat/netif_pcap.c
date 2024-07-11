@@ -5,6 +5,7 @@
 #include "netif_pcap.h"
 #include "net_err.h"
 #include "sys_plat.h"
+#include "exmsg.h"
 
 /**
  * @brief 接收线程
@@ -14,6 +15,7 @@ void recv_thread(void *arg) {
 
     while (1) {
         sys_sleep(1);
+        exmsg_netif_in();  // test
     }
 }
 
@@ -33,8 +35,8 @@ void xmit_thread(void *arg) {
  *        注意，当包含多张网卡时，每个网卡都包含接收/发送两个线程
 */
 net_err_t netif_pcap_open(void) {
-    sys_thread_create(recv_thread, (void *)0);
     sys_thread_create(xmit_thread, (void *)0);
+    sys_thread_create(recv_thread, (void *)0);
 
     return NET_ERR_OK;
 }

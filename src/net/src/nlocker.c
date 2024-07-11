@@ -4,7 +4,7 @@
 
 /**
  * @brief 锁初始化
-*/
+ */
 net_err_t nlocker_init(nlocker_t *locker, nlocker_type_t type) {
     // 类型为用于多线程间的锁
     if (type == NLOCKER_THREAD) {
@@ -21,7 +21,7 @@ net_err_t nlocker_init(nlocker_t *locker, nlocker_type_t type) {
 
 /**
  * @brief 锁销毁
-*/
+ */
 void nlocker_destroy(nlocker_t *locker) {
     if (locker->type == NLOCKER_THREAD) {
         sys_mutex_free(locker->mutex);
@@ -30,7 +30,7 @@ void nlocker_destroy(nlocker_t *locker) {
 
 /**
  * @brief 加锁
-*/
+ */
 void nlocker_lock(nlocker_t *locker) {
     if (locker->type == NLOCKER_THREAD) {
         sys_mutex_lock(locker->mutex);
@@ -39,7 +39,7 @@ void nlocker_lock(nlocker_t *locker) {
 
 /**
  * @brief 解锁
-*/
+ */
 void nlocker_unlock(nlocker_t *locker) {
     if (locker->type == NLOCKER_THREAD) {
         sys_mutex_unlock(locker->mutex);

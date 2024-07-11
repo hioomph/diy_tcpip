@@ -12,7 +12,7 @@
  * @param blk_size      单个内存块的大小
  * @param cnt           表项大小
  * @param share_type    锁类型
-*/
+ */
 net_err_t mblock_init(mblock_t *mblock, void *mem, int blk_size, int cnt, nlocker_type_t lokcer_type) {
     // 链表使用了nlist_node结构，所以大小必须合适
     dbg_assert(blk_size >= sizeof(nlist_node_t), "size error");
@@ -45,7 +45,7 @@ net_err_t mblock_init(mblock_t *mblock, void *mem, int blk_size, int cnt, nlocke
 
 /**
  * @brief 分配一个空闲的存储块
-*/
+ */
 void *mblock_alloc(mblock_t *mblock, int ms) {
     // 不需要等待信号量，查询后直接退出
     // 有两种情况：1）ms < 0；2）此时是用于线程内部的分配
@@ -85,7 +85,7 @@ int mblock_free_cnt(mblock_t *mblock) {
 
 /**
  * @brief 释放存储块
-*/
+ */
 void mblock_free(mblock_t *mblock, void *block) {
     nlocker_lock(&mblock->locker);
     // 将要释放的存储块加入空闲链表

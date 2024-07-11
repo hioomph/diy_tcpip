@@ -1,5 +1,6 @@
-CMakeFiles/net.dir/src/net/src/nlocker.c.obj: \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/nlocker.c \
+CMakeFiles/net.dir/src/net/src/fixq.c.obj: \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/fixq.c \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/fixq.h \
  D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/nlocker.h \
  D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_err.h \
  D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/sys.h \
@@ -214,4 +215,8 @@ CMakeFiles/net.dir/src/net/src/nlocker.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
  D:/PostGraduate/cppex/diy_tcpip/start/npcap/Include/pcap/bpf.h \
  D:/PostGraduate/cppex/diy_tcpip/start/npcap/Include/pcap/dlt.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/dbg.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_cfg.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/nlocker.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/sys.h \
  D:/PostGraduate/cppex/diy_tcpip/start/src/plat/sys_plat.h
