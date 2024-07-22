@@ -99,11 +99,26 @@ CMakeFiles/net.dir/src/net/src/dbg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/net.dir/src/net/src/dbg.c.s"
 	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/dbg.c -o CMakeFiles/net.dir/src/net/src/dbg.c.s
 
+CMakeFiles/net.dir/src/net/src/ether.c.obj: CMakeFiles/net.dir/flags.make
+CMakeFiles/net.dir/src/net/src/ether.c.obj: CMakeFiles/net.dir/includes_C.rsp
+CMakeFiles/net.dir/src/net/src/ether.c.obj: ../src/net/src/ether.c
+CMakeFiles/net.dir/src/net/src/ether.c.obj: CMakeFiles/net.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/net.dir/src/net/src/ether.c.obj"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/net/src/ether.c.obj -MF CMakeFiles/net.dir/src/net/src/ether.c.obj.d -o CMakeFiles/net.dir/src/net/src/ether.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/ether.c
+
+CMakeFiles/net.dir/src/net/src/ether.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/net.dir/src/net/src/ether.c.i"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/ether.c > CMakeFiles/net.dir/src/net/src/ether.c.i
+
+CMakeFiles/net.dir/src/net/src/ether.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/net.dir/src/net/src/ether.c.s"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/ether.c -o CMakeFiles/net.dir/src/net/src/ether.c.s
+
 CMakeFiles/net.dir/src/net/src/exmsg.c.obj: CMakeFiles/net.dir/flags.make
 CMakeFiles/net.dir/src/net/src/exmsg.c.obj: CMakeFiles/net.dir/includes_C.rsp
 CMakeFiles/net.dir/src/net/src/exmsg.c.obj: ../src/net/src/exmsg.c
 CMakeFiles/net.dir/src/net/src/exmsg.c.obj: CMakeFiles/net.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/net.dir/src/net/src/exmsg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/net.dir/src/net/src/exmsg.c.obj"
 	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/net/src/exmsg.c.obj -MF CMakeFiles/net.dir/src/net/src/exmsg.c.obj.d -o CMakeFiles/net.dir/src/net/src/exmsg.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/exmsg.c
 
 CMakeFiles/net.dir/src/net/src/exmsg.c.i: cmake_force
@@ -118,7 +133,7 @@ CMakeFiles/net.dir/src/net/src/fixq.c.obj: CMakeFiles/net.dir/flags.make
 CMakeFiles/net.dir/src/net/src/fixq.c.obj: CMakeFiles/net.dir/includes_C.rsp
 CMakeFiles/net.dir/src/net/src/fixq.c.obj: ../src/net/src/fixq.c
 CMakeFiles/net.dir/src/net/src/fixq.c.obj: CMakeFiles/net.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/net.dir/src/net/src/fixq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/net.dir/src/net/src/fixq.c.obj"
 	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/net/src/fixq.c.obj -MF CMakeFiles/net.dir/src/net/src/fixq.c.obj.d -o CMakeFiles/net.dir/src/net/src/fixq.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/fixq.c
 
 CMakeFiles/net.dir/src/net/src/fixq.c.i: cmake_force
@@ -129,11 +144,41 @@ CMakeFiles/net.dir/src/net/src/fixq.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/net.dir/src/net/src/fixq.c.s"
 	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/fixq.c -o CMakeFiles/net.dir/src/net/src/fixq.c.s
 
+CMakeFiles/net.dir/src/net/src/ipaddr.c.obj: CMakeFiles/net.dir/flags.make
+CMakeFiles/net.dir/src/net/src/ipaddr.c.obj: CMakeFiles/net.dir/includes_C.rsp
+CMakeFiles/net.dir/src/net/src/ipaddr.c.obj: ../src/net/src/ipaddr.c
+CMakeFiles/net.dir/src/net/src/ipaddr.c.obj: CMakeFiles/net.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/net.dir/src/net/src/ipaddr.c.obj"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/net/src/ipaddr.c.obj -MF CMakeFiles/net.dir/src/net/src/ipaddr.c.obj.d -o CMakeFiles/net.dir/src/net/src/ipaddr.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/ipaddr.c
+
+CMakeFiles/net.dir/src/net/src/ipaddr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/net.dir/src/net/src/ipaddr.c.i"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/ipaddr.c > CMakeFiles/net.dir/src/net/src/ipaddr.c.i
+
+CMakeFiles/net.dir/src/net/src/ipaddr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/net.dir/src/net/src/ipaddr.c.s"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/ipaddr.c -o CMakeFiles/net.dir/src/net/src/ipaddr.c.s
+
+CMakeFiles/net.dir/src/net/src/loop.c.obj: CMakeFiles/net.dir/flags.make
+CMakeFiles/net.dir/src/net/src/loop.c.obj: CMakeFiles/net.dir/includes_C.rsp
+CMakeFiles/net.dir/src/net/src/loop.c.obj: ../src/net/src/loop.c
+CMakeFiles/net.dir/src/net/src/loop.c.obj: CMakeFiles/net.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/net.dir/src/net/src/loop.c.obj"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/net/src/loop.c.obj -MF CMakeFiles/net.dir/src/net/src/loop.c.obj.d -o CMakeFiles/net.dir/src/net/src/loop.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/loop.c
+
+CMakeFiles/net.dir/src/net/src/loop.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/net.dir/src/net/src/loop.c.i"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/loop.c > CMakeFiles/net.dir/src/net/src/loop.c.i
+
+CMakeFiles/net.dir/src/net/src/loop.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/net.dir/src/net/src/loop.c.s"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/loop.c -o CMakeFiles/net.dir/src/net/src/loop.c.s
+
 CMakeFiles/net.dir/src/net/src/mblock.c.obj: CMakeFiles/net.dir/flags.make
 CMakeFiles/net.dir/src/net/src/mblock.c.obj: CMakeFiles/net.dir/includes_C.rsp
 CMakeFiles/net.dir/src/net/src/mblock.c.obj: ../src/net/src/mblock.c
 CMakeFiles/net.dir/src/net/src/mblock.c.obj: CMakeFiles/net.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/net.dir/src/net/src/mblock.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/net.dir/src/net/src/mblock.c.obj"
 	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/net/src/mblock.c.obj -MF CMakeFiles/net.dir/src/net/src/mblock.c.obj.d -o CMakeFiles/net.dir/src/net/src/mblock.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/mblock.c
 
 CMakeFiles/net.dir/src/net/src/mblock.c.i: cmake_force
@@ -148,7 +193,7 @@ CMakeFiles/net.dir/src/net/src/net.c.obj: CMakeFiles/net.dir/flags.make
 CMakeFiles/net.dir/src/net/src/net.c.obj: CMakeFiles/net.dir/includes_C.rsp
 CMakeFiles/net.dir/src/net/src/net.c.obj: ../src/net/src/net.c
 CMakeFiles/net.dir/src/net/src/net.c.obj: CMakeFiles/net.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/net.dir/src/net/src/net.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/net.dir/src/net/src/net.c.obj"
 	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/net/src/net.c.obj -MF CMakeFiles/net.dir/src/net/src/net.c.obj.d -o CMakeFiles/net.dir/src/net/src/net.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/net.c
 
 CMakeFiles/net.dir/src/net/src/net.c.i: cmake_force
@@ -159,11 +204,26 @@ CMakeFiles/net.dir/src/net/src/net.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/net.dir/src/net/src/net.c.s"
 	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/net.c -o CMakeFiles/net.dir/src/net/src/net.c.s
 
+CMakeFiles/net.dir/src/net/src/netif.c.obj: CMakeFiles/net.dir/flags.make
+CMakeFiles/net.dir/src/net/src/netif.c.obj: CMakeFiles/net.dir/includes_C.rsp
+CMakeFiles/net.dir/src/net/src/netif.c.obj: ../src/net/src/netif.c
+CMakeFiles/net.dir/src/net/src/netif.c.obj: CMakeFiles/net.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/net.dir/src/net/src/netif.c.obj"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/net/src/netif.c.obj -MF CMakeFiles/net.dir/src/net/src/netif.c.obj.d -o CMakeFiles/net.dir/src/net/src/netif.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/netif.c
+
+CMakeFiles/net.dir/src/net/src/netif.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/net.dir/src/net/src/netif.c.i"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/netif.c > CMakeFiles/net.dir/src/net/src/netif.c.i
+
+CMakeFiles/net.dir/src/net/src/netif.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/net.dir/src/net/src/netif.c.s"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/netif.c -o CMakeFiles/net.dir/src/net/src/netif.c.s
+
 CMakeFiles/net.dir/src/net/src/nlist.c.obj: CMakeFiles/net.dir/flags.make
 CMakeFiles/net.dir/src/net/src/nlist.c.obj: CMakeFiles/net.dir/includes_C.rsp
 CMakeFiles/net.dir/src/net/src/nlist.c.obj: ../src/net/src/nlist.c
 CMakeFiles/net.dir/src/net/src/nlist.c.obj: CMakeFiles/net.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/net.dir/src/net/src/nlist.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/net.dir/src/net/src/nlist.c.obj"
 	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/net/src/nlist.c.obj -MF CMakeFiles/net.dir/src/net/src/nlist.c.obj.d -o CMakeFiles/net.dir/src/net/src/nlist.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/nlist.c
 
 CMakeFiles/net.dir/src/net/src/nlist.c.i: cmake_force
@@ -178,7 +238,7 @@ CMakeFiles/net.dir/src/net/src/nlocker.c.obj: CMakeFiles/net.dir/flags.make
 CMakeFiles/net.dir/src/net/src/nlocker.c.obj: CMakeFiles/net.dir/includes_C.rsp
 CMakeFiles/net.dir/src/net/src/nlocker.c.obj: ../src/net/src/nlocker.c
 CMakeFiles/net.dir/src/net/src/nlocker.c.obj: CMakeFiles/net.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/net.dir/src/net/src/nlocker.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/net.dir/src/net/src/nlocker.c.obj"
 	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/net/src/nlocker.c.obj -MF CMakeFiles/net.dir/src/net/src/nlocker.c.obj.d -o CMakeFiles/net.dir/src/net/src/nlocker.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/nlocker.c
 
 CMakeFiles/net.dir/src/net/src/nlocker.c.i: cmake_force
@@ -193,7 +253,7 @@ CMakeFiles/net.dir/src/net/src/pktbuf.c.obj: CMakeFiles/net.dir/flags.make
 CMakeFiles/net.dir/src/net/src/pktbuf.c.obj: CMakeFiles/net.dir/includes_C.rsp
 CMakeFiles/net.dir/src/net/src/pktbuf.c.obj: ../src/net/src/pktbuf.c
 CMakeFiles/net.dir/src/net/src/pktbuf.c.obj: CMakeFiles/net.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/net.dir/src/net/src/pktbuf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/net.dir/src/net/src/pktbuf.c.obj"
 	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/net/src/pktbuf.c.obj -MF CMakeFiles/net.dir/src/net/src/pktbuf.c.obj.d -o CMakeFiles/net.dir/src/net/src/pktbuf.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/pktbuf.c
 
 CMakeFiles/net.dir/src/net/src/pktbuf.c.i: cmake_force
@@ -204,11 +264,26 @@ CMakeFiles/net.dir/src/net/src/pktbuf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/net.dir/src/net/src/pktbuf.c.s"
 	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/pktbuf.c -o CMakeFiles/net.dir/src/net/src/pktbuf.c.s
 
+CMakeFiles/net.dir/src/net/src/tools.c.obj: CMakeFiles/net.dir/flags.make
+CMakeFiles/net.dir/src/net/src/tools.c.obj: CMakeFiles/net.dir/includes_C.rsp
+CMakeFiles/net.dir/src/net/src/tools.c.obj: ../src/net/src/tools.c
+CMakeFiles/net.dir/src/net/src/tools.c.obj: CMakeFiles/net.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/net.dir/src/net/src/tools.c.obj"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/net/src/tools.c.obj -MF CMakeFiles/net.dir/src/net/src/tools.c.obj.d -o CMakeFiles/net.dir/src/net/src/tools.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/tools.c
+
+CMakeFiles/net.dir/src/net/src/tools.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/net.dir/src/net/src/tools.c.i"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/tools.c > CMakeFiles/net.dir/src/net/src/tools.c.i
+
+CMakeFiles/net.dir/src/net/src/tools.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/net.dir/src/net/src/tools.c.s"
+	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/tools.c -o CMakeFiles/net.dir/src/net/src/tools.c.s
+
 CMakeFiles/net.dir/src/plat/net_plat.c.obj: CMakeFiles/net.dir/flags.make
 CMakeFiles/net.dir/src/plat/net_plat.c.obj: CMakeFiles/net.dir/includes_C.rsp
 CMakeFiles/net.dir/src/plat/net_plat.c.obj: ../src/plat/net_plat.c
 CMakeFiles/net.dir/src/plat/net_plat.c.obj: CMakeFiles/net.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/net.dir/src/plat/net_plat.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/net.dir/src/plat/net_plat.c.obj"
 	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/plat/net_plat.c.obj -MF CMakeFiles/net.dir/src/plat/net_plat.c.obj.d -o CMakeFiles/net.dir/src/plat/net_plat.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/plat/net_plat.c
 
 CMakeFiles/net.dir/src/plat/net_plat.c.i: cmake_force
@@ -223,7 +298,7 @@ CMakeFiles/net.dir/src/plat/netif_pcap.c.obj: CMakeFiles/net.dir/flags.make
 CMakeFiles/net.dir/src/plat/netif_pcap.c.obj: CMakeFiles/net.dir/includes_C.rsp
 CMakeFiles/net.dir/src/plat/netif_pcap.c.obj: ../src/plat/netif_pcap.c
 CMakeFiles/net.dir/src/plat/netif_pcap.c.obj: CMakeFiles/net.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/net.dir/src/plat/netif_pcap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/net.dir/src/plat/netif_pcap.c.obj"
 	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/plat/netif_pcap.c.obj -MF CMakeFiles/net.dir/src/plat/netif_pcap.c.obj.d -o CMakeFiles/net.dir/src/plat/netif_pcap.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/plat/netif_pcap.c
 
 CMakeFiles/net.dir/src/plat/netif_pcap.c.i: cmake_force
@@ -238,7 +313,7 @@ CMakeFiles/net.dir/src/plat/sys_plat.c.obj: CMakeFiles/net.dir/flags.make
 CMakeFiles/net.dir/src/plat/sys_plat.c.obj: CMakeFiles/net.dir/includes_C.rsp
 CMakeFiles/net.dir/src/plat/sys_plat.c.obj: ../src/plat/sys_plat.c
 CMakeFiles/net.dir/src/plat/sys_plat.c.obj: CMakeFiles/net.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/net.dir/src/plat/sys_plat.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/net.dir/src/plat/sys_plat.c.obj"
 	C:/mingw64/bin/gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/net.dir/src/plat/sys_plat.c.obj -MF CMakeFiles/net.dir/src/plat/sys_plat.c.obj.d -o CMakeFiles/net.dir/src/plat/sys_plat.c.obj -c D:/PostGraduate/cppex/diy_tcpip/start/src/plat/sys_plat.c
 
 CMakeFiles/net.dir/src/plat/sys_plat.c.i: cmake_force
@@ -253,13 +328,18 @@ CMakeFiles/net.dir/src/plat/sys_plat.c.s: cmake_force
 net_OBJECTS = \
 "CMakeFiles/net.dir/src/app/test/main.c.obj" \
 "CMakeFiles/net.dir/src/net/src/dbg.c.obj" \
+"CMakeFiles/net.dir/src/net/src/ether.c.obj" \
 "CMakeFiles/net.dir/src/net/src/exmsg.c.obj" \
 "CMakeFiles/net.dir/src/net/src/fixq.c.obj" \
+"CMakeFiles/net.dir/src/net/src/ipaddr.c.obj" \
+"CMakeFiles/net.dir/src/net/src/loop.c.obj" \
 "CMakeFiles/net.dir/src/net/src/mblock.c.obj" \
 "CMakeFiles/net.dir/src/net/src/net.c.obj" \
+"CMakeFiles/net.dir/src/net/src/netif.c.obj" \
 "CMakeFiles/net.dir/src/net/src/nlist.c.obj" \
 "CMakeFiles/net.dir/src/net/src/nlocker.c.obj" \
 "CMakeFiles/net.dir/src/net/src/pktbuf.c.obj" \
+"CMakeFiles/net.dir/src/net/src/tools.c.obj" \
 "CMakeFiles/net.dir/src/plat/net_plat.c.obj" \
 "CMakeFiles/net.dir/src/plat/netif_pcap.c.obj" \
 "CMakeFiles/net.dir/src/plat/sys_plat.c.obj"
@@ -269,20 +349,25 @@ net_EXTERNAL_OBJECTS =
 
 net.exe: CMakeFiles/net.dir/src/app/test/main.c.obj
 net.exe: CMakeFiles/net.dir/src/net/src/dbg.c.obj
+net.exe: CMakeFiles/net.dir/src/net/src/ether.c.obj
 net.exe: CMakeFiles/net.dir/src/net/src/exmsg.c.obj
 net.exe: CMakeFiles/net.dir/src/net/src/fixq.c.obj
+net.exe: CMakeFiles/net.dir/src/net/src/ipaddr.c.obj
+net.exe: CMakeFiles/net.dir/src/net/src/loop.c.obj
 net.exe: CMakeFiles/net.dir/src/net/src/mblock.c.obj
 net.exe: CMakeFiles/net.dir/src/net/src/net.c.obj
+net.exe: CMakeFiles/net.dir/src/net/src/netif.c.obj
 net.exe: CMakeFiles/net.dir/src/net/src/nlist.c.obj
 net.exe: CMakeFiles/net.dir/src/net/src/nlocker.c.obj
 net.exe: CMakeFiles/net.dir/src/net/src/pktbuf.c.obj
+net.exe: CMakeFiles/net.dir/src/net/src/tools.c.obj
 net.exe: CMakeFiles/net.dir/src/plat/net_plat.c.obj
 net.exe: CMakeFiles/net.dir/src/plat/netif_pcap.c.obj
 net.exe: CMakeFiles/net.dir/src/plat/sys_plat.c.obj
 net.exe: CMakeFiles/net.dir/build.make
 net.exe: CMakeFiles/net.dir/linklibs.rsp
 net.exe: CMakeFiles/net.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable net.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:/PostGraduate/cppex/diy_tcpip/start/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C executable net.exe"
 	"C:/Program Files (x86)/CMake/bin/cmake.exe" -E rm -f CMakeFiles/net.dir/objects.a
 	C:/mingw64/bin/ar.exe qc CMakeFiles/net.dir/objects.a @CMakeFiles/net.dir/objects1.rsp
 	C:/mingw64/bin/gcc.exe -g -Wl,--whole-archive CMakeFiles/net.dir/objects.a -Wl,--no-whole-archive -o net.exe -Wl,--out-implib,libnet.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/net.dir/linklibs.rsp

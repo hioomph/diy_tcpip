@@ -16,6 +16,8 @@
 #define DBG_LEVEL_INFO           3         // 开启错误、警告、一般信息输出
 
 void dbg_print(int m_level, int s_level, const char* file, const char* func, int line, const char* fmt, ...);
+void dump_mac(const char* msg, const uint8_t* mac);
+void dump_ip_buf(const char* msg, const uint8_t* ip);
 
 /**
  * @brief 不同的调试输出宏，其中__FILE__、__FUNCTION__和__LINE__为C语言内置的宏

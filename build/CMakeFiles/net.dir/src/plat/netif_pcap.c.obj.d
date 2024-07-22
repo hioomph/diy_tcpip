@@ -2,8 +2,9 @@ CMakeFiles/net.dir/src/plat/netif_pcap.c.obj: \
  D:/PostGraduate/cppex/diy_tcpip/start/src/plat/netif_pcap.c \
  D:/PostGraduate/cppex/diy_tcpip/start/src/plat/netif_pcap.h \
  D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_err.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/plat/sys_plat.h \
- C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/netif.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+ C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -11,6 +12,17 @@ CMakeFiles/net.dir/src/plat/netif_pcap.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+ C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_cfg.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/ipaddr.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_err.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/fixq.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/nlocker.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/sys.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/plat/net_plat.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/plat/sys_plat.h \
+ C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
@@ -22,10 +34,6 @@ CMakeFiles/net.dir/src/plat/netif_pcap.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/limits.h \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
  C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
- C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
- C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
  C:/mingw64/x86_64-w64-mingw32/include/time.h \
  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
@@ -211,6 +219,11 @@ CMakeFiles/net.dir/src/plat/netif_pcap.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
  D:/PostGraduate/cppex/diy_tcpip/start/npcap/Include/pcap/bpf.h \
  D:/PostGraduate/cppex/diy_tcpip/start/npcap/Include/pcap/dlt.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/pktbuf.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/nlist.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/dbg.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/pktbuf.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/ether.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/ether.h \
  D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/exmsg.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_err.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/nlist.h
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/netif.h

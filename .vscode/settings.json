@@ -56,7 +56,9 @@
         "pcap.h": "c",
         "sys_plat.h": "c",
         "stdarg.h": "c",
-        "fixq.h": "c"
+        "fixq.h": "c",
+        "netif_pcap.h": "c",
+        "nlocker.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools"

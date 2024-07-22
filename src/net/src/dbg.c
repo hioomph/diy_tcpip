@@ -9,6 +9,7 @@
 
 /**
  * @brief 调试信息输出，输出文件名、函数名、函数以及调试信息
+ * 
  * @param m_level  主日志等级
  * @param s_level  子日志等级
  */
@@ -45,5 +46,33 @@ void dbg_print(int m_level, int s_level, const char* file, const char* func, int
         plat_vsprintf(str_buf, fmt, args);  // 将格式化字符串和参数列表格式化到str_buf中
         plat_printf("%s\n"DBG_STYLE_RESET, str_buf);  // 输出格式化后的日志信息，并重置样式
         va_end(args);  // 结束可变参数的处理
+    }
+}
+
+/**
+ * @brief 打印mac地址
+ */
+void dump_mac(const char * msg, const uint8_t * mac) {
+    if (msg) {
+        plat_printf("%s", msg);
+    }
+
+    plat_printf("%02x-%02x-%02x-%02x-%02x-%02x\n", mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
+}
+
+/**
+ * @brief 打印IP地址
+ * 
+ * @param ip ip地址
+ */
+void dump_ip_buf(const char* msg, const uint8_t* ip) {
+    if (msg) {
+        plat_printf("%s", msg);
+    }
+
+    if (ip) {
+        plat_printf("%d.%d.%d.%d", ip[0], ip[1], ip[2], ip[3]);
+    } else {
+        plat_printf("0.0.0.0");
     }
 }

@@ -2,8 +2,7 @@ CMakeFiles/net.dir/src/net/src/net.c.obj: \
  D:/PostGraduate/cppex/diy_tcpip/start/src/net/src/net.c \
  D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net.h \
  D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_err.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/exmsg.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/nlist.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/dbg.h \
  D:/PostGraduate/cppex/diy_tcpip/start/src/plat/net_plat.h \
  D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_err.h \
  D:/PostGraduate/cppex/diy_tcpip/start/src/plat/sys_plat.h \
@@ -215,5 +214,17 @@ CMakeFiles/net.dir/src/net/src/net.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
  D:/PostGraduate/cppex/diy_tcpip/start/npcap/Include/pcap/bpf.h \
  D:/PostGraduate/cppex/diy_tcpip/start/npcap/Include/pcap/dlt.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_cfg.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/ether.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/ether.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/exmsg.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/netif.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/ipaddr.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/fixq.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/nlocker.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/sys.h \
  D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/pktbuf.h \
- D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_cfg.h
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/nlist.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/netif.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/pktbuf.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/loop.h

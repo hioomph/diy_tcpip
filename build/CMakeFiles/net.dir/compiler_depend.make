@@ -15,11 +15,9 @@ CMakeFiles/net.dir/src/app/test/main.c.obj: ../src/app/test/main.c \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
-  ../src/net/net/net_err.h \
-  ../src/net/net/nlocker.h \
-  ../src/net/net/net_err.h \
-  ../src/net/net/sys.h \
+  ../src/net/net/dbg.h \
   ../src/plat/net_plat.h \
+  ../src/net/net/net_err.h \
   ../src/plat/sys_plat.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
@@ -216,13 +214,21 @@ CMakeFiles/net.dir/src/app/test/main.c.obj: ../src/app/test/main.c \
   C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
   ../npcap/Include/pcap/bpf.h \
   ../npcap/Include/pcap/dlt.h \
+  ../src/net/net/net_cfg.h \
+  ../src/net/net/ether.h \
+  ../src/net/net/ether.h \
+  ../src/net/net/net_err.h \
+  ../src/net/net/mblock.h \
+  ../src/net/net/nlist.h \
+  ../src/net/net/nlocker.h \
+  ../src/net/net/sys.h \
   ../src/plat/sys_plat.h \
   ../src/net/net/net.h \
+  ../src/net/net/netif.h \
+  ../src/net/net/ipaddr.h \
+  ../src/net/net/fixq.h \
+  ../src/net/net/pktbuf.h \
   ../src/plat/netif_pcap.h \
-  ../src/net/net/dbg.h \
-  ../src/net/net/net_cfg.h \
-  ../src/net/net/nlist.h \
-  ../src/net/net/mblock.h \
   ../src/net/net/nlist.h \
   ../src/net/net/nlocker.h \
   ../src/net/net/pktbuf.h
@@ -442,15 +448,10 @@ CMakeFiles/net.dir/src/net/src/dbg.c.obj: ../src/net/src/dbg.c \
   ../npcap/Include/pcap/dlt.h \
   ../src/net/net/net_cfg.h
 
-CMakeFiles/net.dir/src/net/src/exmsg.c.obj: ../src/net/src/exmsg.c \
-  ../src/net/net/exmsg.h \
-  ../src/net/net/net_err.h \
-  ../src/net/net/nlist.h \
-  ../src/net/net/dbg.h \
-  ../src/plat/net_plat.h \
-  ../src/net/net/net_err.h \
-  ../src/plat/sys_plat.h \
-  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+CMakeFiles/net.dir/src/net/src/ether.c.obj: ../src/net/src/ether.c \
+  ../src/net/net/ether.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -458,6 +459,15 @@ CMakeFiles/net.dir/src/net/src/exmsg.c.obj: ../src/net/src/exmsg.c \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  ../src/net/net/ether.h \
+  ../src/net/net/net_err.h \
+  ../src/net/net/dbg.h \
+  ../src/plat/net_plat.h \
+  ../src/net/net/net_err.h \
+  ../src/plat/sys_plat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
@@ -469,10 +479,6 @@ CMakeFiles/net.dir/src/net/src/exmsg.c.obj: ../src/net/src/exmsg.c \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
-  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
-  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
@@ -659,11 +665,244 @@ CMakeFiles/net.dir/src/net/src/exmsg.c.obj: ../src/net/src/exmsg.c \
   ../npcap/Include/pcap/bpf.h \
   ../npcap/Include/pcap/dlt.h \
   ../src/net/net/net_cfg.h \
+  ../src/net/net/ipaddr.h \
+  ../src/net/net/netif.h \
+  ../src/net/net/ipaddr.h \
   ../src/net/net/fixq.h \
   ../src/net/net/nlocker.h \
   ../src/net/net/sys.h \
+  ../src/net/net/pktbuf.h \
+  ../src/net/net/nlist.h
+
+CMakeFiles/net.dir/src/net/src/exmsg.c.obj: ../src/net/src/exmsg.c \
+  ../src/net/net/exmsg.h \
+  ../src/net/net/net_err.h \
+  ../src/net/net/netif.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  ../src/net/net/net_cfg.h \
+  ../src/net/net/ipaddr.h \
+  ../src/net/net/fixq.h \
+  ../src/net/net/nlocker.h \
+  ../src/net/net/sys.h \
+  ../src/plat/net_plat.h \
+  ../src/net/net/net_err.h \
+  ../src/plat/sys_plat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+  C:/mingw64/x86_64-w64-mingw32/include/limits.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/mingw64/x86_64-w64-mingw32/include/windows.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
+  C:/mingw64/x86_64-w64-mingw32/include/excpt.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/windef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/minwindef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winapifamily.h \
+  C:/mingw64/x86_64-w64-mingw32/include/specstrings.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sal.h \
+  C:/mingw64/x86_64-w64-mingw32/include/driverspecs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnt.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_unicode.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ctype.h \
+  C:/mingw64/x86_64-w64-mingw32/include/apiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
+  C:/mingw64/x86_64-w64-mingw32/include/basetsd.h \
+  C:/mingw64/x86_64-w64-mingw32/include/guiddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/x86intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ia32intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/emmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ammintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/smmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/popcntintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/immintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512fintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512erintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512pfintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512cdintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512dqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlbwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vldqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmavlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124fmapsintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124vnniwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2vlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnniintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnnivlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqvlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bitalgintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/shaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lzcntintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fmaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/f16cintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rtmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xtestintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/cetintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/gfniintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vaesintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vpclmulqdqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/movdirintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm3dnow.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/prfchwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fma4intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xopintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lwpintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tbmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rdseedintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fxsrintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveoptintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/sgxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pconfigintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/adxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clwbintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clflushoptintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavesintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavecintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mwaitxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clzerointrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wbnoinvdintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pkuintrin.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
+  C:/mingw64/x86_64-w64-mingw32/include/poppack.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/poppack.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ktmtypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winbase.h \
+  C:/mingw64/x86_64-w64-mingw32/include/apisetcconv.h \
+  C:/mingw64/x86_64-w64-mingw32/include/minwinbase.h \
+  C:/mingw64/x86_64-w64-mingw32/include/bemapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/debugapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/errhandlingapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fibersapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fileapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/handleapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/heapapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ioapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/interlockedapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/jobapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/libloaderapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/memoryapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/namedpipeapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/namespaceapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processenv.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processthreadsapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processtopologyapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/profileapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/securityappcontainer.h \
+  C:/mingw64/x86_64-w64-mingw32/include/securitybaseapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/synchapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sysinfoapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/systemtopologyapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/utilapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wow64apiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winerror.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fltwinerror.h \
+  C:/mingw64/x86_64-w64-mingw32/include/timezoneapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wingdi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack1.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winuser.h \
+  C:/mingw64/x86_64-w64-mingw32/include/tvout.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnls.h \
+  C:/mingw64/x86_64-w64-mingw32/include/datetimeapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stringapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wincon.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winver.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winreg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/reason.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnetwk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wnnc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/virtdisk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stralign.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stralign_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winsvc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/mcx.h \
+  C:/mingw64/x86_64-w64-mingw32/include/imm.h \
+  ../npcap/Include/pcap.h \
+  ../npcap/Include/pcap/pcap.h \
+  ../npcap/Include/pcap/funcattrs.h \
+  ../npcap/Include/pcap/compiler-tests.h \
+  ../npcap/Include/pcap/pcap-inttypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/inttypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winsock2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ws1_undef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_bsd_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/inaddr.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_socket_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_fd_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsadata.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2def.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsa_errnos.h \
+  C:/mingw64/x86_64-w64-mingw32/include/qos.h \
+  C:/mingw64/x86_64-w64-mingw32/include/io.h \
+  ../npcap/Include/pcap/socket.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2ipdef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/in6addr.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_mreq1.h \
+  C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
+  ../npcap/Include/pcap/bpf.h \
+  ../npcap/Include/pcap/dlt.h \
+  ../src/net/net/pktbuf.h \
+  ../src/net/net/nlist.h \
+  ../src/net/net/dbg.h \
+  ../src/net/net/fixq.h \
+  ../src/net/net/ipaddr.h \
   ../src/net/net/mblock.h \
-  ../src/plat/sys_plat.h
+  ../src/plat/sys_plat.h \
+  ../src/net/net/netif.h \
+  ../src/net/net/pktbuf.h
 
 CMakeFiles/net.dir/src/net/src/fixq.c.obj: ../src/net/src/fixq.c \
   ../src/net/net/fixq.h \
@@ -886,6 +1125,449 @@ CMakeFiles/net.dir/src/net/src/fixq.c.obj: ../src/net/src/fixq.c \
   ../src/net/net/nlocker.h \
   ../src/net/net/sys.h \
   ../src/plat/sys_plat.h
+
+CMakeFiles/net.dir/src/net/src/ipaddr.c.obj: ../src/net/src/ipaddr.c \
+  ../src/net/net/ipaddr.h \
+  ../src/net/net/net_err.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  ../src/net/net/dbg.h \
+  ../src/plat/net_plat.h \
+  ../src/net/net/net_err.h \
+  ../src/plat/sys_plat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+  C:/mingw64/x86_64-w64-mingw32/include/limits.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/mingw64/x86_64-w64-mingw32/include/windows.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
+  C:/mingw64/x86_64-w64-mingw32/include/excpt.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/windef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/minwindef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winapifamily.h \
+  C:/mingw64/x86_64-w64-mingw32/include/specstrings.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sal.h \
+  C:/mingw64/x86_64-w64-mingw32/include/driverspecs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnt.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_unicode.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ctype.h \
+  C:/mingw64/x86_64-w64-mingw32/include/apiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
+  C:/mingw64/x86_64-w64-mingw32/include/basetsd.h \
+  C:/mingw64/x86_64-w64-mingw32/include/guiddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/x86intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ia32intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/emmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ammintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/smmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/popcntintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/immintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512fintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512erintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512pfintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512cdintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512dqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlbwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vldqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmavlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124fmapsintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124vnniwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2vlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnniintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnnivlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqvlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bitalgintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/shaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lzcntintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fmaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/f16cintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rtmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xtestintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/cetintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/gfniintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vaesintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vpclmulqdqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/movdirintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm3dnow.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/prfchwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fma4intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xopintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lwpintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tbmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rdseedintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fxsrintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveoptintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/sgxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pconfigintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/adxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clwbintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clflushoptintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavesintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavecintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mwaitxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clzerointrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wbnoinvdintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pkuintrin.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
+  C:/mingw64/x86_64-w64-mingw32/include/poppack.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/poppack.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ktmtypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winbase.h \
+  C:/mingw64/x86_64-w64-mingw32/include/apisetcconv.h \
+  C:/mingw64/x86_64-w64-mingw32/include/minwinbase.h \
+  C:/mingw64/x86_64-w64-mingw32/include/bemapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/debugapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/errhandlingapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fibersapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fileapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/handleapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/heapapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ioapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/interlockedapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/jobapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/libloaderapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/memoryapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/namedpipeapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/namespaceapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processenv.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processthreadsapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processtopologyapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/profileapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/securityappcontainer.h \
+  C:/mingw64/x86_64-w64-mingw32/include/securitybaseapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/synchapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sysinfoapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/systemtopologyapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/utilapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wow64apiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winerror.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fltwinerror.h \
+  C:/mingw64/x86_64-w64-mingw32/include/timezoneapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wingdi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack1.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winuser.h \
+  C:/mingw64/x86_64-w64-mingw32/include/tvout.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnls.h \
+  C:/mingw64/x86_64-w64-mingw32/include/datetimeapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stringapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wincon.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winver.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winreg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/reason.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnetwk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wnnc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/virtdisk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stralign.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stralign_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winsvc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/mcx.h \
+  C:/mingw64/x86_64-w64-mingw32/include/imm.h \
+  ../npcap/Include/pcap.h \
+  ../npcap/Include/pcap/pcap.h \
+  ../npcap/Include/pcap/funcattrs.h \
+  ../npcap/Include/pcap/compiler-tests.h \
+  ../npcap/Include/pcap/pcap-inttypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/inttypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winsock2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ws1_undef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_bsd_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/inaddr.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_socket_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_fd_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsadata.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2def.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsa_errnos.h \
+  C:/mingw64/x86_64-w64-mingw32/include/qos.h \
+  C:/mingw64/x86_64-w64-mingw32/include/io.h \
+  ../npcap/Include/pcap/socket.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2ipdef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/in6addr.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_mreq1.h \
+  C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
+  ../npcap/Include/pcap/bpf.h \
+  ../npcap/Include/pcap/dlt.h \
+  ../src/net/net/net_cfg.h
+
+CMakeFiles/net.dir/src/net/src/loop.c.obj: ../src/net/src/loop.c \
+  ../src/net/net/ipaddr.h \
+  ../src/net/net/net_err.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  ../src/net/net/net_err.h \
+  ../src/net/net/netif.h \
+  ../src/net/net/net_cfg.h \
+  ../src/net/net/ipaddr.h \
+  ../src/net/net/fixq.h \
+  ../src/net/net/nlocker.h \
+  ../src/net/net/sys.h \
+  ../src/plat/net_plat.h \
+  ../src/plat/sys_plat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+  C:/mingw64/x86_64-w64-mingw32/include/limits.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/mingw64/x86_64-w64-mingw32/include/windows.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
+  C:/mingw64/x86_64-w64-mingw32/include/excpt.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/windef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/minwindef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winapifamily.h \
+  C:/mingw64/x86_64-w64-mingw32/include/specstrings.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sal.h \
+  C:/mingw64/x86_64-w64-mingw32/include/driverspecs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnt.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_unicode.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ctype.h \
+  C:/mingw64/x86_64-w64-mingw32/include/apiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
+  C:/mingw64/x86_64-w64-mingw32/include/basetsd.h \
+  C:/mingw64/x86_64-w64-mingw32/include/guiddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/x86intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ia32intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/emmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ammintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/smmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/popcntintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/immintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512fintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512erintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512pfintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512cdintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512dqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlbwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vldqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmavlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124fmapsintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124vnniwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2vlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnniintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnnivlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqvlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bitalgintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/shaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lzcntintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fmaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/f16cintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rtmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xtestintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/cetintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/gfniintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vaesintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vpclmulqdqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/movdirintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm3dnow.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/prfchwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fma4intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xopintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lwpintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tbmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rdseedintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fxsrintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveoptintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/sgxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pconfigintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/adxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clwbintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clflushoptintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavesintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavecintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mwaitxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clzerointrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wbnoinvdintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pkuintrin.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
+  C:/mingw64/x86_64-w64-mingw32/include/poppack.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/poppack.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ktmtypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winbase.h \
+  C:/mingw64/x86_64-w64-mingw32/include/apisetcconv.h \
+  C:/mingw64/x86_64-w64-mingw32/include/minwinbase.h \
+  C:/mingw64/x86_64-w64-mingw32/include/bemapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/debugapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/errhandlingapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fibersapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fileapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/handleapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/heapapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ioapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/interlockedapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/jobapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/libloaderapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/memoryapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/namedpipeapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/namespaceapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processenv.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processthreadsapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processtopologyapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/profileapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/securityappcontainer.h \
+  C:/mingw64/x86_64-w64-mingw32/include/securitybaseapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/synchapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sysinfoapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/systemtopologyapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/utilapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wow64apiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winerror.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fltwinerror.h \
+  C:/mingw64/x86_64-w64-mingw32/include/timezoneapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wingdi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack1.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winuser.h \
+  C:/mingw64/x86_64-w64-mingw32/include/tvout.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnls.h \
+  C:/mingw64/x86_64-w64-mingw32/include/datetimeapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stringapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wincon.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winver.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winreg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/reason.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnetwk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wnnc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/virtdisk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stralign.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stralign_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winsvc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/mcx.h \
+  C:/mingw64/x86_64-w64-mingw32/include/imm.h \
+  ../npcap/Include/pcap.h \
+  ../npcap/Include/pcap/pcap.h \
+  ../npcap/Include/pcap/funcattrs.h \
+  ../npcap/Include/pcap/compiler-tests.h \
+  ../npcap/Include/pcap/pcap-inttypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/inttypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winsock2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ws1_undef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_bsd_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/inaddr.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_socket_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_fd_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsadata.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2def.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsa_errnos.h \
+  C:/mingw64/x86_64-w64-mingw32/include/qos.h \
+  C:/mingw64/x86_64-w64-mingw32/include/io.h \
+  ../npcap/Include/pcap/socket.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2ipdef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/in6addr.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_mreq1.h \
+  C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
+  ../npcap/Include/pcap/bpf.h \
+  ../npcap/Include/pcap/dlt.h \
+  ../src/net/net/pktbuf.h \
+  ../src/net/net/nlist.h \
+  ../src/net/net/dbg.h \
+  ../src/net/net/exmsg.h \
+  ../src/net/net/netif.h
 
 CMakeFiles/net.dir/src/net/src/mblock.c.obj: ../src/net/src/mblock.c \
   ../src/net/net/mblock.h \
@@ -1113,8 +1795,7 @@ CMakeFiles/net.dir/src/net/src/mblock.c.obj: ../src/net/src/mblock.c \
 CMakeFiles/net.dir/src/net/src/net.c.obj: ../src/net/src/net.c \
   ../src/net/net/net.h \
   ../src/net/net/net_err.h \
-  ../src/net/net/exmsg.h \
-  ../src/net/net/nlist.h \
+  ../src/net/net/dbg.h \
   ../src/plat/net_plat.h \
   ../src/net/net/net_err.h \
   ../src/plat/sys_plat.h \
@@ -1326,8 +2007,250 @@ CMakeFiles/net.dir/src/net/src/net.c.obj: ../src/net/src/net.c \
   C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
   ../npcap/Include/pcap/bpf.h \
   ../npcap/Include/pcap/dlt.h \
+  ../src/net/net/net_cfg.h \
+  ../src/net/net/ether.h \
+  ../src/net/net/ether.h \
+  ../src/net/net/exmsg.h \
+  ../src/net/net/netif.h \
+  ../src/net/net/ipaddr.h \
+  ../src/net/net/fixq.h \
+  ../src/net/net/nlocker.h \
+  ../src/net/net/sys.h \
   ../src/net/net/pktbuf.h \
-  ../src/net/net/net_cfg.h
+  ../src/net/net/nlist.h \
+  ../src/net/net/netif.h \
+  ../src/net/net/pktbuf.h \
+  ../src/net/net/loop.h
+
+CMakeFiles/net.dir/src/net/src/netif.c.obj: ../src/net/src/netif.c \
+  ../src/net/net/netif.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  ../src/net/net/net_cfg.h \
+  ../src/net/net/ipaddr.h \
+  ../src/net/net/net_err.h \
+  ../src/net/net/fixq.h \
+  ../src/net/net/nlocker.h \
+  ../src/net/net/sys.h \
+  ../src/plat/net_plat.h \
+  ../src/net/net/net_err.h \
+  ../src/plat/sys_plat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+  C:/mingw64/x86_64-w64-mingw32/include/limits.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/mingw64/x86_64-w64-mingw32/include/windows.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
+  C:/mingw64/x86_64-w64-mingw32/include/excpt.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/windef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/minwindef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winapifamily.h \
+  C:/mingw64/x86_64-w64-mingw32/include/specstrings.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sal.h \
+  C:/mingw64/x86_64-w64-mingw32/include/driverspecs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnt.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_unicode.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ctype.h \
+  C:/mingw64/x86_64-w64-mingw32/include/apiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
+  C:/mingw64/x86_64-w64-mingw32/include/basetsd.h \
+  C:/mingw64/x86_64-w64-mingw32/include/guiddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/x86intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ia32intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/emmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ammintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/smmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/popcntintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/immintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512fintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512erintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512pfintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512cdintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512dqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlbwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vldqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmavlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124fmapsintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124vnniwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2vlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnniintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnnivlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqvlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bitalgintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/shaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lzcntintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fmaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/f16cintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rtmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xtestintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/cetintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/gfniintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vaesintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vpclmulqdqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/movdirintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm3dnow.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/prfchwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fma4intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xopintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lwpintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tbmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rdseedintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fxsrintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveoptintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/sgxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pconfigintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/adxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clwbintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clflushoptintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavesintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavecintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mwaitxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clzerointrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wbnoinvdintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pkuintrin.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
+  C:/mingw64/x86_64-w64-mingw32/include/poppack.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/poppack.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ktmtypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winbase.h \
+  C:/mingw64/x86_64-w64-mingw32/include/apisetcconv.h \
+  C:/mingw64/x86_64-w64-mingw32/include/minwinbase.h \
+  C:/mingw64/x86_64-w64-mingw32/include/bemapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/debugapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/errhandlingapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fibersapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fileapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/handleapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/heapapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ioapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/interlockedapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/jobapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/libloaderapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/memoryapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/namedpipeapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/namespaceapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processenv.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processthreadsapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processtopologyapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/profileapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/securityappcontainer.h \
+  C:/mingw64/x86_64-w64-mingw32/include/securitybaseapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/synchapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sysinfoapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/systemtopologyapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/utilapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wow64apiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winerror.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fltwinerror.h \
+  C:/mingw64/x86_64-w64-mingw32/include/timezoneapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wingdi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack1.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winuser.h \
+  C:/mingw64/x86_64-w64-mingw32/include/tvout.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnls.h \
+  C:/mingw64/x86_64-w64-mingw32/include/datetimeapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stringapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wincon.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winver.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winreg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/reason.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnetwk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wnnc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/virtdisk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stralign.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stralign_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winsvc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/mcx.h \
+  C:/mingw64/x86_64-w64-mingw32/include/imm.h \
+  ../npcap/Include/pcap.h \
+  ../npcap/Include/pcap/pcap.h \
+  ../npcap/Include/pcap/funcattrs.h \
+  ../npcap/Include/pcap/compiler-tests.h \
+  ../npcap/Include/pcap/pcap-inttypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/inttypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winsock2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ws1_undef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_bsd_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/inaddr.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_socket_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_fd_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsadata.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2def.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsa_errnos.h \
+  C:/mingw64/x86_64-w64-mingw32/include/qos.h \
+  C:/mingw64/x86_64-w64-mingw32/include/io.h \
+  ../npcap/Include/pcap/socket.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2ipdef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/in6addr.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_mreq1.h \
+  C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
+  ../npcap/Include/pcap/bpf.h \
+  ../npcap/Include/pcap/dlt.h \
+  ../src/net/net/pktbuf.h \
+  ../src/net/net/nlist.h \
+  ../src/net/net/dbg.h \
+  ../src/net/net/fixq.h \
+  ../src/net/net/mblock.h \
+  ../src/plat/sys_plat.h \
+  ../src/net/net/nlist.h \
+  ../src/net/net/pktbuf.h \
+  ../src/net/net/exmsg.h \
+  ../src/net/net/netif.h
 
 CMakeFiles/net.dir/src/net/src/nlist.c.obj: ../src/net/src/nlist.c \
   ../src/net/net/nlist.h
@@ -1773,6 +2696,227 @@ CMakeFiles/net.dir/src/net/src/pktbuf.c.obj: ../src/net/src/pktbuf.c \
   ../src/net/net/nlist.h \
   ../src/net/net/nlocker.h
 
+CMakeFiles/net.dir/src/net/src/tools.c.obj: ../src/net/src/tools.c \
+  ../src/net/net/tools.h \
+  ../src/plat/net_plat.h \
+  ../src/net/net/net_err.h \
+  ../src/plat/sys_plat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+  C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+  C:/mingw64/x86_64-w64-mingw32/include/limits.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+  C:/mingw64/x86_64-w64-mingw32/include/windows.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
+  C:/mingw64/x86_64-w64-mingw32/include/excpt.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/windef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/minwindef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winapifamily.h \
+  C:/mingw64/x86_64-w64-mingw32/include/specstrings.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sal.h \
+  C:/mingw64/x86_64-w64-mingw32/include/driverspecs.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnt.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_unicode.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ctype.h \
+  C:/mingw64/x86_64-w64-mingw32/include/apiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
+  C:/mingw64/x86_64-w64-mingw32/include/basetsd.h \
+  C:/mingw64/x86_64-w64-mingw32/include/guiddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/string.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/x86intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ia32intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/emmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ammintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/smmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/popcntintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wmmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/immintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512fintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512erintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512pfintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512cdintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512dqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vlbwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vldqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512ifmavlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmivlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124fmapsintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx5124vnniwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2vlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnniintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnnivlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vpopcntdqvlintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512bitalgintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/shaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lzcntintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmiintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/bmi2intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fmaintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/f16cintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rtmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xtestintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/cetintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/gfniintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vaesintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/vpclmulqdqintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/movdirintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm3dnow.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/prfchwintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fma4intrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xopintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lwpintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tbmintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rdseedintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fxsrintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveoptintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/sgxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pconfigintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/adxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clwbintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clflushoptintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavesintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavecintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mwaitxintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/clzerointrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/wbnoinvdintrin.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pkuintrin.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
+  C:/mingw64/x86_64-w64-mingw32/include/poppack.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack4.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/poppack.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack8.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ktmtypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winbase.h \
+  C:/mingw64/x86_64-w64-mingw32/include/apisetcconv.h \
+  C:/mingw64/x86_64-w64-mingw32/include/minwinbase.h \
+  C:/mingw64/x86_64-w64-mingw32/include/bemapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/debugapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/errhandlingapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fibersapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fileapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/handleapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/heapapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ioapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/interlockedapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/jobapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/libloaderapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/memoryapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/namedpipeapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/namespaceapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processenv.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processthreadsapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/processtopologyapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/profileapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/securityappcontainer.h \
+  C:/mingw64/x86_64-w64-mingw32/include/securitybaseapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/synchapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sysinfoapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/systemtopologyapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/threadpoolapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/utilapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wow64apiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winerror.h \
+  C:/mingw64/x86_64-w64-mingw32/include/fltwinerror.h \
+  C:/mingw64/x86_64-w64-mingw32/include/timezoneapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wingdi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pshpack1.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winuser.h \
+  C:/mingw64/x86_64-w64-mingw32/include/tvout.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnls.h \
+  C:/mingw64/x86_64-w64-mingw32/include/datetimeapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stringapiset.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wincon.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winver.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winreg.h \
+  C:/mingw64/x86_64-w64-mingw32/include/reason.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winnetwk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/wnnc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/virtdisk.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stralign.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stralign_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winsvc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/mcx.h \
+  C:/mingw64/x86_64-w64-mingw32/include/imm.h \
+  ../npcap/Include/pcap.h \
+  ../npcap/Include/pcap/pcap.h \
+  ../npcap/Include/pcap/funcattrs.h \
+  ../npcap/Include/pcap/compiler-tests.h \
+  ../npcap/Include/pcap/pcap-inttypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/inttypes.h \
+  C:/mingw64/x86_64-w64-mingw32/include/winsock2.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ws1_undef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_bsd_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/inaddr.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_socket_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_fd_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_types.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsadata.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2def.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_wsa_errnos.h \
+  C:/mingw64/x86_64-w64-mingw32/include/qos.h \
+  C:/mingw64/x86_64-w64-mingw32/include/io.h \
+  ../npcap/Include/pcap/socket.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2tcpip.h \
+  C:/mingw64/x86_64-w64-mingw32/include/ws2ipdef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/in6addr.h \
+  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_mreq1.h \
+  C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
+  ../npcap/Include/pcap/bpf.h \
+  ../npcap/Include/pcap/dlt.h \
+  ../src/net/net/ipaddr.h \
+  ../src/net/net/net_err.h \
+  ../src/net/net/pktbuf.h \
+  ../src/net/net/nlist.h \
+  ../src/net/net/net_cfg.h \
+  ../src/net/net/dbg.h \
+  ../src/net/net/dbg.h
+
 CMakeFiles/net.dir/src/plat/net_plat.c.obj: ../src/plat/net_plat.c \
   ../src/plat/net_plat.h \
   ../src/net/net/net_err.h \
@@ -1984,13 +3128,17 @@ CMakeFiles/net.dir/src/plat/net_plat.c.obj: ../src/plat/net_plat.c \
   C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_mreq1.h \
   C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
   ../npcap/Include/pcap/bpf.h \
-  ../npcap/Include/pcap/dlt.h
+  ../npcap/Include/pcap/dlt.h \
+  ../src/net/net/dbg.h \
+  ../src/plat/net_plat.h \
+  ../src/net/net/net_cfg.h
 
 CMakeFiles/net.dir/src/plat/netif_pcap.c.obj: ../src/plat/netif_pcap.c \
   ../src/plat/netif_pcap.h \
   ../src/net/net/net_err.h \
-  ../src/plat/sys_plat.h \
-  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
+  ../src/net/net/netif.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/crtdefs.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -1998,6 +3146,17 @@ CMakeFiles/net.dir/src/plat/netif_pcap.c.obj: ../src/plat/netif_pcap.c \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  ../src/net/net/net_cfg.h \
+  ../src/net/net/ipaddr.h \
+  ../src/net/net/net_err.h \
+  ../src/net/net/fixq.h \
+  ../src/net/net/nlocker.h \
+  ../src/net/net/sys.h \
+  ../src/plat/net_plat.h \
+  ../src/plat/sys_plat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
@@ -2009,10 +3168,6 @@ CMakeFiles/net.dir/src/plat/netif_pcap.c.obj: ../src/plat/netif_pcap.c \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
-  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
-  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
-  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
@@ -2198,9 +3353,14 @@ CMakeFiles/net.dir/src/plat/netif_pcap.c.obj: ../src/plat/netif_pcap.c \
   C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
   ../npcap/Include/pcap/bpf.h \
   ../npcap/Include/pcap/dlt.h \
+  ../src/net/net/pktbuf.h \
+  ../src/net/net/nlist.h \
+  ../src/net/net/dbg.h \
+  ../src/net/net/pktbuf.h \
+  ../src/net/net/ether.h \
+  ../src/net/net/ether.h \
   ../src/net/net/exmsg.h \
-  ../src/net/net/net_err.h \
-  ../src/net/net/nlist.h
+  ../src/net/net/netif.h
 
 CMakeFiles/net.dir/src/plat/sys_plat.c.obj: ../src/plat/sys_plat.c \
   ../src/plat/sys_plat.h \
@@ -2449,13 +3609,11 @@ C:/mingw64/x86_64-w64-mingw32/include/_mingw.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ammintrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveintrin.h:
-
-../src/net/net/sys.h:
-
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_push.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/driverspecs.h:
+
+../src/net/src/ether.c:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h:
 
@@ -2464,6 +3622,8 @@ C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl:
 C:/mingw64/x86_64-w64-mingw32/include/securityappcontainer.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h:
+
+../src/net/net/ether.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsavesintrin.h:
 
@@ -2475,21 +3635,15 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h:
 
-../src/net/net/net_err.h:
+C:/mingw64/x86_64-w64-mingw32/include/_timeval.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/x86intrin.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/smmintrin.h:
 
-../src/net/net/nlocker.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/basetsd.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/wincon.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/stdint.h:
+../src/net/net/dbg.h:
 
 ../src/plat/net_plat.h:
+
+../src/net/net/net_err.h:
 
 ../src/plat/sys_plat.h:
 
@@ -2513,6 +3667,20 @@ C:/mingw64/x86_64-w64-mingw32/include/malloc.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/x86intrin.h:
+
+../src/net/net/nlocker.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/basetsd.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/wincon.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/stdint.h:
+
+../src/net/net/ipaddr.h:
+
 C:/mingw64/x86_64-w64-mingw32/include/stddef.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h:
@@ -2520,10 +3688,6 @@ C:/mingw64/x86_64-w64-mingw32/include/realtimeapiset.h:
 C:/mingw64/x86_64-w64-mingw32/include/time.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/emmintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/smmintrin.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/_timeval.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
 
@@ -2641,6 +3805,8 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2intrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vbmi2vlintrin.h:
 
+../src/net/net/loop.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnniintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/avx512vnnivlintrin.h:
@@ -2690,6 +3856,10 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/lwpintrin.h:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/rdseedintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/fxsrintrin.h:
+
+../src/net/net/sys.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xsaveoptintrin.h:
 
@@ -2764,6 +3934,8 @@ C:/mingw64/x86_64-w64-mingw32/include/namespaceapi.h:
 C:/mingw64/x86_64-w64-mingw32/include/winerror.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/processthreadsapi.h:
+
+../src/net/net/netif.h:
 
 ../npcap/Include/pcap/bpf.h:
 
@@ -2861,19 +4033,27 @@ C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h:
 
 ../npcap/Include/pcap/dlt.h:
 
-../src/net/net/net.h:
-
-../src/net/net/dbg.h:
-
 ../src/net/net/net_cfg.h:
 
 ../src/net/net/nlist.h:
 
+../src/net/net/net.h:
+
 ../src/net/src/fixq.c:
+
+../src/net/src/ipaddr.c:
+
+../src/net/src/loop.c:
 
 ../src/net/src/mblock.c:
 
 ../src/net/src/net.c:
+
+../src/net/src/netif.c:
+
+../src/net/src/tools.c:
+
+../src/net/net/tools.h:
 
 ../src/plat/netif_pcap.c:
 

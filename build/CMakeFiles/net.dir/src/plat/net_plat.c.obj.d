@@ -210,4 +210,7 @@ CMakeFiles/net.dir/src/plat/net_plat.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/_ip_mreq1.h \
  C:/mingw64/x86_64-w64-mingw32/include/mstcpip.h \
  D:/PostGraduate/cppex/diy_tcpip/start/npcap/Include/pcap/bpf.h \
- D:/PostGraduate/cppex/diy_tcpip/start/npcap/Include/pcap/dlt.h
+ D:/PostGraduate/cppex/diy_tcpip/start/npcap/Include/pcap/dlt.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/dbg.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/plat/net_plat.h \
+ D:/PostGraduate/cppex/diy_tcpip/start/src/net/net/net_cfg.h

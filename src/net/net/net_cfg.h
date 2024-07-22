@@ -16,12 +16,23 @@
 #define DBG_BUF             DBG_LEVEL_INFO          // 数据包管理器
 #define DBG_PLAT            DBG_LEVEL_INFO          // 系统平台
 #define DBG_INIT            DBG_LEVEL_INFO          // 系统初始化
+#define DBG_NETIF           DBG_LEVEL_INFO          // 网络接口层
+#define DBG_ETHER           DBG_LEVEL_INFO          // 以太网模块
+#define DBG_TOOLS           DBG_LEVEL_INFO          // 工具集
 
 #define EXMSG_MSG_CNT       10                      // 消息缓冲区大小
-#define EXMSG_LOCKER        NLOCKER_THREAD           // 核心线程的锁类型
+#define EXMSG_LOCKER        NLOCKER_THREAD          // 核心线程的锁类型
+
+#define NET_ENDIAN_LITTLE   1                       // 系统是否为小端
 
 #define PKTBUF_BLK_SIZE     128                     // 数据包中每一块的大小
 #define PKTBUF_BLK_CNT      100                     // 数据包中块的总数量
 #define PKTBUF_BUF_CNT      100                     // 数据包的总数量
+
+#define NETIF_HWADDR_SIZE   10                      // 硬件地址长度，mac地址最少6个字节
+#define NETIF_NAME_SIZE     10                      // 网络接口名称大小
+#define NETIF_DEV_CNT       4                       // 网络接口的数量
+#define NETIF_INQ_SIZE      50                      // 网卡输入队列最大容量
+#define NETIF_OUTQ_SIZE     50                      // 网卡输出队列最大容量
 
 #endif // _NET_CFG_H_
